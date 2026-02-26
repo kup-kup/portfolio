@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        Konkanok Umnartyuttithum | Projects
+    </title>
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="page">
+        <nav class="links">
+            <a class="back-link" href="index.html">← Back</a>
+        </nav>
+        <h1 class="name">Projects</h1>
+        <div class="cards" id="cards"></div>
+    </div>
+
+    <script>
+        const projects = [
+            'projects/project-1.html',
+            'projects/project-2.html',
+            'projects/project-3.html',
+        ];
+
+        const container = document.getElementById('cards');
+
+        projects.forEach(src => {
+            fetch(src)
+                .then(r => r.text())
+                .then(html => {
+                    const div = document.createElement('div');
+                    div.innerHTML = html;
+                    container.appendChild(div.firstElementChild);
+                });
+        });
+    </script>
+</body>
+
+</html>
