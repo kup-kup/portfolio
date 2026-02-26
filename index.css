@@ -9,7 +9,6 @@
 body {
     font-family: "Quicksand", sans-serif;
     background-color: #f7f4ef;
-    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%22200%22%20height%3D%22200%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.8%22%20numOctaves%3D%224%22%20stitchTiles%3D%22stitch%22/%3E%3C/filter%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20filter%3D%22url(%23noise)%22%20opacity%3D%220.08%22/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 200px 200px;
     color: #222;
